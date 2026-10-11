@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.caixa-tarefas {
+    background-color: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.caixa-tarefas h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#form-tarefa {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#nova-tarefa {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#lista-tarefas {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#lista-tarefas li {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 12px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .caixa-tarefas {
+        padding: 16px;
+    }
+}
